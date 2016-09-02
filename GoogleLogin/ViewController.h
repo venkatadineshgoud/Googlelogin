@@ -10,7 +10,7 @@
 #import <Google/SignIn.h>
 
 @interface ViewController : UIViewController <GIDSignInUIDelegate>
-@property (strong, nonatomic) IBOutlet GIDSignInButton *signInButton;
+
 
 
 @end

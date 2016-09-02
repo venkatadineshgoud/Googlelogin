@@ -17,32 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfZ-45-C5u" customClass="GIDSignInButton">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRo-T1-ELw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="123" width="344" height="126"/>
+                                    <rect key="frame" x="171" y="156" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="valueChanged" id="uGk-So-9ie"/>
+                                    <action selector="signingooglelogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aO0-Ni-GPH"/>
                                 </connections>
-                            </view>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="lfZ-45-C5u"/>
+                                <exclude reference="FRo-T1-ELw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="lfZ-45-C5u"/>
+                                <include reference="FRo-T1-ELw"/>
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="signInButton" destination="lfZ-45-C5u" id="Aai-5a-lCN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
